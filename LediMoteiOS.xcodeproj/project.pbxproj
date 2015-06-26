@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06CEB2601B3B561A00677332 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CEB25F1B3B561A00677332 /* AppDelegate.swift */; };
+		06CEB2651B3B561A00677332 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06CEB2631B3B561A00677332 /* Main.storyboard */; };
+		06CEB2671B3B561A00677332 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06CEB2661B3B561A00677332 /* Images.xcassets */; };
+		06CEB26A1B3B561A00677332 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06CEB2681B3B561A00677332 /* LaunchScreen.xib */; };
+		06CEB2761B3B561A00677332 /* LediMoteiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CEB2751B3B561A00677332 /* LediMoteiOSTests.swift */; };
+		06CEB2801B3B564300677332 /* LediMoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CEB27F1B3B564300677332 /* LediMoteViewController.swift */; };
+		06CEB28E1B3B568800677332 /* SocketAckManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CEB2811B3B568800677332 /* SocketAckManager.swift */; };
+		06CEB28F1B3B568800677332 /* SocketAnyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CEB2821B3B568800677332 /* SocketAnyEvent.swift */; };
+		06CEB2901B3B568800677332 /* SocketEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CEB2831B3B568800677332 /* SocketEngine.swift */; };
+		06CEB2911B3B568800677332 /* SocketEngineClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CEB2841B3B568800677332 /* SocketEngineClient.swift */; };
+		06CEB2921B3B568800677332 /* SocketEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CEB2851B3B568800677332 /* SocketEventHandler.swift */; };
+		06CEB2931B3B568800677332 /* SocketFixUTF8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CEB2861B3B568800677332 /* SocketFixUTF8.swift */; };
+		06CEB2941B3B568800677332 /* SocketIOClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CEB2871B3B568800677332 /* SocketIOClient.swift */; };
+		06CEB2951B3B568800677332 /* SocketLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CEB2881B3B568800677332 /* SocketLogger.swift */; };
+		06CEB2961B3B568800677332 /* SocketPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CEB2891B3B568800677332 /* SocketPacket.swift */; };
+		06CEB2971B3B568800677332 /* SocketParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CEB28A1B3B568800677332 /* SocketParser.swift */; };
+		06CEB2981B3B568800677332 /* SocketTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CEB28B1B3B568800677332 /* SocketTypes.swift */; };
+		06CEB2991B3B568800677332 /* SwiftRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CEB28C1B3B568800677332 /* SwiftRegex.swift */; };
+		06CEB29A1B3B568800677332 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CEB28D1B3B568800677332 /* WebSocket.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06CEB2701B3B561A00677332 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06CEB2521B3B561A00677332 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06CEB2591B3B561A00677332;
+			remoteInfo = LediMoteiOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06CEB25A1B3B561A00677332 /* LediMoteiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LediMoteiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06CEB25E1B3B561A00677332 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06CEB25F1B3B561A00677332 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		06CEB2641B3B561A00677332 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		06CEB2661B3B561A00677332 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		06CEB2691B3B561A00677332 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		06CEB26F1B3B561A00677332 /* LediMoteiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LediMoteiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		06CEB2741B3B561A00677332 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06CEB2751B3B561A00677332 /* LediMoteiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LediMoteiOSTests.swift; sourceTree = "<group>"; };
+		06CEB27F1B3B564300677332 /* LediMoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LediMoteViewController.swift; sourceTree = "<group>"; };
+		06CEB2811B3B568800677332 /* SocketAckManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketAckManager.swift; sourceTree = "<group>"; };
+		06CEB2821B3B568800677332 /* SocketAnyEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketAnyEvent.swift; sourceTree = "<group>"; };
+		06CEB2831B3B568800677332 /* SocketEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEngine.swift; sourceTree = "<group>"; };
+		06CEB2841B3B568800677332 /* SocketEngineClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEngineClient.swift; sourceTree = "<group>"; };
+		06CEB2851B3B568800677332 /* SocketEventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEventHandler.swift; sourceTree = "<group>"; };
+		06CEB2861B3B568800677332 /* SocketFixUTF8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketFixUTF8.swift; sourceTree = "<group>"; };
+		06CEB2871B3B568800677332 /* SocketIOClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOClient.swift; sourceTree = "<group>"; };
+		06CEB2881B3B568800677332 /* SocketLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketLogger.swift; sourceTree = "<group>"; };
+		06CEB2891B3B568800677332 /* SocketPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketPacket.swift; sourceTree = "<group>"; };
+		06CEB28A1B3B568800677332 /* SocketParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketParser.swift; sourceTree = "<group>"; };
+		06CEB28B1B3B568800677332 /* SocketTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketTypes.swift; sourceTree = "<group>"; };
+		06CEB28C1B3B568800677332 /* SwiftRegex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftRegex.swift; sourceTree = "<group>"; };
+		06CEB28D1B3B568800677332 /* WebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06CEB2571B3B561A00677332 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06CEB26C1B3B561A00677332 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06CEB2511B3B561A00677332 = {
+			isa = PBXGroup;
+			children = (
+				06CEB25C1B3B561A00677332 /* LediMoteiOS */,
+				06CEB2721B3B561A00677332 /* LediMoteiOSTests */,
+				06CEB25B1B3B561A00677332 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		06CEB25B1B3B561A00677332 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06CEB25A1B3B561A00677332 /* LediMoteiOS.app */,
+				06CEB26F1B3B561A00677332 /* LediMoteiOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06CEB25C1B3B561A00677332 /* LediMoteiOS */ = {
+			isa = PBXGroup;
+			children = (
+				06CEB29B1B3B568E00677332 /* SocketIOClientSwift */,
+				06CEB27F1B3B564300677332 /* LediMoteViewController.swift */,
+				06CEB25F1B3B561A00677332 /* AppDelegate.swift */,
+				06CEB2631B3B561A00677332 /* Main.storyboard */,
+				06CEB2661B3B561A00677332 /* Images.xcassets */,
+				06CEB2681B3B561A00677332 /* LaunchScreen.xib */,
+				06CEB25D1B3B561A00677332 /* Supporting Files */,
+			);
+			path = LediMoteiOS;
+			sourceTree = "<group>";
+		};
+		06CEB25D1B3B561A00677332 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				06CEB25E1B3B561A00677332 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		06CEB2721B3B561A00677332 /* LediMoteiOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				06CEB2751B3B561A00677332 /* LediMoteiOSTests.swift */,
+				06CEB2731B3B561A00677332 /* Supporting Files */,
+			);
+			path = LediMoteiOSTests;
+			sourceTree = "<group>";
+		};
+		06CEB2731B3B561A00677332 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				06CEB2741B3B561A00677332 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		06CEB29B1B3B568E00677332 /* SocketIOClientSwift */ = {
+			isa = PBXGroup;
+			children = (
+				06CEB2811B3B568800677332 /* SocketAckManager.swift */,
+				06CEB2821B3B568800677332 /* SocketAnyEvent.swift */,
+				06CEB2831B3B568800677332 /* SocketEngine.swift */,
+				06CEB2841B3B568800677332 /* SocketEngineClient.swift */,
+				06CEB2851B3B568800677332 /* SocketEventHandler.swift */,
+				06CEB2861B3B568800677332 /* SocketFixUTF8.swift */,
+				06CEB2871B3B568800677332 /* SocketIOClient.swift */,
+				06CEB2881B3B568800677332 /* SocketLogger.swift */,
+				06CEB2891B3B568800677332 /* SocketPacket.swift */,
+				06CEB28A1B3B568800677332 /* SocketParser.swift */,
+				06CEB28B1B3B568800677332 /* SocketTypes.swift */,
+				06CEB28C1B3B568800677332 /* SwiftRegex.swift */,
+				06CEB28D1B3B568800677332 /* WebSocket.swift */,
+			);
+			name = SocketIOClientSwift;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		06CEB2591B3B561A00677332 /* LediMoteiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06CEB2791B3B561A00677332 /* Build configuration list for PBXNativeTarget "LediMoteiOS" */;
+			buildPhases = (
+				06CEB2561B3B561A00677332 /* Sources */,
+				06CEB2571B3B561A00677332 /* Frameworks */,
+				06CEB2581B3B561A00677332 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LediMoteiOS;
+			productName = LediMoteiOS;
+			productReference = 06CEB25A1B3B561A00677332 /* LediMoteiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		06CEB26E1B3B561A00677332 /* LediMoteiOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06CEB27C1B3B561A00677332 /* Build configuration list for PBXNativeTarget "LediMoteiOSTests" */;
+			buildPhases = (
+				06CEB26B1B3B561A00677332 /* Sources */,
+				06CEB26C1B3B561A00677332 /* Frameworks */,
+				06CEB26D1B3B561A00677332 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06CEB2711B3B561A00677332 /* PBXTargetDependency */,
+			);
+			name = LediMoteiOSTests;
+			productName = LediMoteiOSTests;
+			productReference = 06CEB26F1B3B561A00677332 /* LediMoteiOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		06CEB2521B3B561A00677332 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Esther Jun Kim";
+				TargetAttributes = {
+					06CEB2591B3B561A00677332 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					06CEB26E1B3B561A00677332 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 06CEB2591B3B561A00677332;
+					};
+				};
+			};
+			buildConfigurationList = 06CEB2551B3B561A00677332 /* Build configuration list for PBXProject "LediMoteiOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 06CEB2511B3B561A00677332;
+			productRefGroup = 06CEB25B1B3B561A00677332 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				06CEB2591B3B561A00677332 /* LediMoteiOS */,
+				06CEB26E1B3B561A00677332 /* LediMoteiOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		06CEB2581B3B561A00677332 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06CEB2651B3B561A00677332 /* Main.storyboard in Resources */,
+				06CEB26A1B3B561A00677332 /* LaunchScreen.xib in Resources */,
+				06CEB2671B3B561A00677332 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06CEB26D1B3B561A00677332 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06CEB2561B3B561A00677332 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06CEB2941B3B568800677332 /* SocketIOClient.swift in Sources */,
+				06CEB28E1B3B568800677332 /* SocketAckManager.swift in Sources */,
+				06CEB2911B3B568800677332 /* SocketEngineClient.swift in Sources */,
+				06CEB2991B3B568800677332 /* SwiftRegex.swift in Sources */,
+				06CEB29A1B3B568800677332 /* WebSocket.swift in Sources */,
+				06CEB2901B3B568800677332 /* SocketEngine.swift in Sources */,
+				06CEB2601B3B561A00677332 /* AppDelegate.swift in Sources */,
+				06CEB2961B3B568800677332 /* SocketPacket.swift in Sources */,
+				06CEB2921B3B568800677332 /* SocketEventHandler.swift in Sources */,
+				06CEB2951B3B568800677332 /* SocketLogger.swift in Sources */,
+				06CEB2931B3B568800677332 /* SocketFixUTF8.swift in Sources */,
+				06CEB2981B3B568800677332 /* SocketTypes.swift in Sources */,
+				06CEB28F1B3B568800677332 /* SocketAnyEvent.swift in Sources */,
+				06CEB2801B3B564300677332 /* LediMoteViewController.swift in Sources */,
+				06CEB2971B3B568800677332 /* SocketParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06CEB26B1B3B561A00677332 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06CEB2761B3B561A00677332 /* LediMoteiOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		06CEB2711B3B561A00677332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06CEB2591B3B561A00677332 /* LediMoteiOS */;
+			targetProxy = 06CEB2701B3B561A00677332 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		06CEB2631B3B561A00677332 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06CEB2641B3B561A00677332 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		06CEB2681B3B561A00677332 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06CEB2691B3B561A00677332 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		06CEB2771B3B561A00677332 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		06CEB2781B3B561A00677332 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		06CEB27A1B3B561A00677332 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LediMoteiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		06CEB27B1B3B561A00677332 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LediMoteiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		06CEB27D1B3B561A00677332 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LediMoteiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LediMoteiOS.app/LediMoteiOS";
+			};
+			name = Debug;
+		};
+		06CEB27E1B3B561A00677332 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LediMoteiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LediMoteiOS.app/LediMoteiOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06CEB2551B3B561A00677332 /* Build configuration list for PBXProject "LediMoteiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06CEB2771B3B561A00677332 /* Debug */,
+				06CEB2781B3B561A00677332 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06CEB2791B3B561A00677332 /* Build configuration list for PBXNativeTarget "LediMoteiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06CEB27A1B3B561A00677332 /* Debug */,
+				06CEB27B1B3B561A00677332 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		06CEB27C1B3B561A00677332 /* Build configuration list for PBXNativeTarget "LediMoteiOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06CEB27D1B3B561A00677332 /* Debug */,
+				06CEB27E1B3B561A00677332 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 06CEB2521B3B561A00677332 /* Project object */;
+}

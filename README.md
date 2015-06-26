@@ -1,4 +1,4 @@
-# LediMote
+# LediMoteiOS
 
 iOS client for [LediMote](https://github.com/drejkim/LediMote).
 

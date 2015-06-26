@@ -24,7 +24,7 @@ Replace `myedison` with the name of your Edison.
 
 ### Running the LediMote server
 
-* On Edison, navigate to `ledimote/server`.
+* On Edison, navigate to `LediMote/server`.
 * Run the server by typing `node server.js`.
 
 The Node.js server should now be running. The console will look something like this:

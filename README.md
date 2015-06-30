@@ -17,7 +17,7 @@ Take a look at this [video](https://youtu.be/i61g4aYkrI0) to see it in action.
 
 Modify `socket` in `LediMoteViewController.swift`. The section of the code looks like this:
 
-```bash
+```swift
 // MODIFY THIS WITH THE APPROPRIATE URL
 let socket = SocketIOClient(socketURL: "http://myedison.local:8080")
 ```
@@ -38,3 +38,5 @@ HTTP server listening on port 8080
 ### Using the iOS client
 
 See [Apple's instructions](https://developer.apple.com/library/ios/documentation/ToolsLanguages/Conceptual/Xcode_Overview/RunYourApp.html) for launching an app from Xcode.
+
+If you are running this on an iOS device, make sure that it is on the same WiFi network as your Edison.

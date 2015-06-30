@@ -9,7 +9,7 @@ Take a look at this [video](https://youtu.be/i61g4aYkrI0) to see it in action.
 ## Requirements
 
 * [LediMote](https://github.com/drejkim/LediMote)
-* Xcode 6.3 / Swift 1.2
+* Xcode 6.3-4 / Swift 1.2
 
 ## Running the demo
 

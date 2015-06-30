@@ -4,6 +4,8 @@ iOS client for [LediMote](https://github.com/drejkim/LediMote).
 
 Take a look at this [video](https://youtu.be/i61g4aYkrI0) to see it in action.
 
+<img src="https://raw.githubusercontent.com/drejkim/LediMoteiOS/master/screenshots/LediMote.png" width="250">
+
 ## Requirements
 
 * [LediMote](https://github.com/drejkim/LediMote)

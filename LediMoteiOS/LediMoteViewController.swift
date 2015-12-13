@@ -25,6 +25,10 @@ class LediMoteViewController: UITableViewController {
         // Disable cell selection highlighting
         tableView.allowsSelection = false
         
+        socket.on("connect") { data, ack in
+            print("socket connected")
+        }
+        
         socket.connect()
     }
 

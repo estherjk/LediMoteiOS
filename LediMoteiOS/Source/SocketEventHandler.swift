@@ -1,8 +1,8 @@
 //
-//  SocketAnyEvent.swift
-//  Socket.IO-Swift
+//  EventHandler.swift
+//  Socket.IO-Client-Swift
 //
-//  Created by Erik Little on 3/28/15.
+//  Created by Erik Little on 1/18/15.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -24,12 +24,12 @@
 
 import Foundation
 
-@objc public final class SocketAnyEvent {
-    public let event:String!
-    public let items:NSArray?
+struct SocketEventHandler {
+    let event: String
+    let id: NSUUID
+    let callback: NormalCallback
     
-    init(event:String, items:NSArray?) {
-        self.event = event
-        self.items = items
+    func executeCallback(items: [AnyObject], withAck ack: Int, withSocket socket: SocketIOClient) {
+        callback(items, SocketAckEmitter(socket: socket, ackNum: ack))
     }
 }

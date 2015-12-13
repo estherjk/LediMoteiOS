@@ -1,8 +1,8 @@
 //
-//  SocketTypes.swift
-//  SocketIO-Swift
+//  SocketEngineSpec.swift
+//  Socket.IO-Client-Swift
 //
-//  Created by Erik Little on 4/8/15.
+//  Created by Erik Little on 10/7/15.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -21,14 +21,22 @@
 //  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
+//
 
 import Foundation
 
-// @objc_block is undocumented, but is used because Swift assumes that all
-// Objective-C blocks are copied, but Objective-C assumes that Swift will copy it.
-// And the way things are done here, the bridging fails to copy the block in
-// SocketAckMap#addAck
-public typealias AckCallback = @objc_block (NSArray?) -> Void
-public typealias AckEmitter = (AnyObject...) -> Void
-public typealias NormalCallback = (NSArray?, AckEmitter?) -> Void
-public typealias OnAckCallback = (timeout:UInt64, callback:AckCallback) -> Void
+@objc public protocol SocketEngineSpec {
+    weak var client: SocketEngineClient? {get set}
+    var cookies: [NSHTTPCookie]? {get}
+    var sid: String {get}
+    var socketPath: String {get}
+    var urlPolling: String {get}
+    var urlWebSocket: String {get}
+    
+    init(client: SocketEngineClient, url: String, options: NSDictionary?)
+    
+    func close()
+    func open(opts: [String: AnyObject]?)
+    func send(msg: String, withData datas: [NSData])
+    func write(msg: String, withType type: SocketEnginePacketType, withData data: [NSData])
+}
